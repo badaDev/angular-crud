@@ -1,0 +1,34 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .my-table{
+    padding: 2rem 0rem;
+  }
+
+
+  //material table
+  table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  td, th {
+    width: 15%;
+  }
+
+
+  .mat-toolbar.mat-primary {
+    background: navy;
+    color: #fff;
+  }
+
+  @media only screen and (max-width: 600px) {
+    
+  }
+
+  

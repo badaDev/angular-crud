@@ -1,0 +1,50 @@
+{
+  "productList": [
+    {
+      "productName": "Apple",
+      "category": "Fashion",
+      "listingDate": "2022-04-16T23:00:00.000Z",
+      "condition": "Brand New",
+      "price": 3456,
+      "comment": "its new",
+      "id": 1
+    },
+    {
+      "productName": "LG",
+      "category": "mobile-phones-tablets",
+      "listingDate": "2022-04-16T23:00:00.000Z",
+      "condition": "Brand New",
+      "price": 3333,
+      "comment": "new",
+      "id": 4
+    },
+    {
+      "productName": "Samsung",
+      "category": "electronics",
+      "listingDate": "2022-04-16T23:00:00.000Z",
+      "condition": "Brand New",
+      "price": 44444,
+      "comment": "new",
+      "id": 5
+    },
+    {
+      "productName": "Sony",
+      "category": "Mobile Phone & Tablets",
+      "listingDate": "2022-04-19T23:00:00.000Z",
+      "condition": "Refurbished",
+      "price": 1234,
+      "comment": "not new",
+      "id": 8
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -25,3 +25,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## More details
+This project is an angular CRUD(create, read, update, delete) project,
+it uses a fake json server that allows users to add new products to the list, edit the product and also
+delete any product they don't want from the list.
+it was built with angular material. 
