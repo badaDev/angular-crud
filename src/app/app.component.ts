@@ -27,6 +27,7 @@ export class AppComponent implements OnInit {
   //material table
   displayedColumns: string[] = ['productName', 'category', 'listingDate', 'condition', 'price', 'action'];
   dataSource: MatTableDataSource<any>;
+  productData: any;
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
@@ -46,15 +47,23 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getAllProducts();
+    this.getAllProducts(); 
   }
+  
 
 
   getAllProducts() {
     this.apiService.getProduct()
     .subscribe({
       next: (res) => {
-        this.dataSource = new MatTableDataSource(res);
+        console.log(res);
+        
+        this.productData = res;
+        console.log(this.productData, "product data");
+        
+        this.dataSource = res['data'];
+        console.log(this.dataSource, "datasource");
+        
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort
       },
@@ -63,6 +72,7 @@ export class AppComponent implements OnInit {
       }
     })
   }
+
 
   editProduct(row: any) {
     this.dialog.open(DialogComponent, {
